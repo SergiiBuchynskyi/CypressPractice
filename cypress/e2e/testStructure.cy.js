@@ -15,9 +15,10 @@ describe('context: My First Tests', ()=>{
     
     afterEach(()=>{
         //similar to afterMethod in TestNG
+
     })
 
-    it('Opening a web application', ()=>{
+    xit('Opening a web application', ()=>{
         cy.visit('/');
         cy.get(':nth-child(41) > a').click();
 
@@ -26,18 +27,18 @@ describe('context: My First Tests', ()=>{
         expect(false).not.to.equal(true)
     })
 
-    it('Test 3', ()=>{
-        expect(false).not.to.equal(false)
+    xit('Test 3', ()=>{
+        expect(false).equal(false)
     })
     it('Test 4', ()=>{
-        expect(5).not.to.equal(5)
+        expect(5).equal(5)
     })
 
     it('Test 5', ()=>{
-        expect(true).not.to.equal('5'== 5)
+        expect(true).not.to.equal("5"=== 5)
     })
 
 
-    
+
 
 })

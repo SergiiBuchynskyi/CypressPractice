@@ -22,8 +22,22 @@ describe('context: My First Tests', ()=>{
         cy.get(':nth-child(41) > a').click();
 
     })
+    it('Test 2', ()=>{
+        expect(false).not.to.equal(true)
+    })
+
+    it('Test 3', ()=>{
+        expect(false).not.to.equal(false)
+    })
+    it('Test 4', ()=>{
+        expect(5).not.to.equal(5)
+    })
+
+    it('Test 5', ()=>{
+        expect(true).not.to.equal('5'== 5)
+    })
+
 
     
-
 
 })
